@@ -1,0 +1,5 @@
+// Platzieren Sie Ihre Einstellungen in dieser Datei, um Standard- und Benutzereinstellungen zu überschreiben.
+{
+     // Passen Sie den Zoomfaktor des Fensters an. Die ursprüngliche Größe ist 0. Jede Inkrementierung nach oben (z. B. 1) oder unten (z. B. -1) stellt eine Vergrößerung bzw. Verkleinerung um 20 % dar. Sie können auch Dezimalwerte eingeben, um den Zoomfaktor genauer anzupassen.
+    "window.zoomLevel": 0,   
+}

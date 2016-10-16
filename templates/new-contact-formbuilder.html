@@ -1,0 +1,24 @@
+<h1>New Contact with Formbuilder</h1>
+<form class="contact" [ngFormModel]="myForm" (ngSubmit)="onSubmit(myForm.value)">
+    <div> 
+        <label for="firstname"> Firstname: </label>  
+        <input type="text" id="firstname" 
+            [ngFormControl]="myForm.controls['firstname']" />
+    </div>
+    <div> 
+        <label for="lastname"> Lastname: </label>  
+        <input type="text" id="lastname" 
+            [ngFormControl]="myForm.controls['lastname']" />
+    </div>
+    <div> 
+        <label for="telefon"> Phonenumber: </label>  
+        <input type="text" id="telefon"  
+             [ngFormControl]="myForm.controls['telefon']" />
+    </div>
+    <div> 
+        <label for="email"> E-Mail: </label> 
+        <input type="text" id="email" 
+             [ngFormControl]="myForm.controls['email']"/>
+    </div>
+    <button type="submit" [disabled]="!myForm.valid">Create Contact</button>
+</form>
