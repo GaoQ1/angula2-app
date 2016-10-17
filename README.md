@@ -18,3 +18,7 @@ npm install
 ```
 npm start
 ```
+
+### angular2 boilerplate
+ - [Angular 2 Webpack Starter from AngularClass](https://github.com/AngularClass/angular2-webpack-starter)
+ - [Angular 2 Webpack from preboot](https://github.com/preboot/angular2-webpack)

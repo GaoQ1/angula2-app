@@ -21,5 +21,27 @@
   ],
   "atom": {
     "rewriteTsconfig": true
-  }
+  },
+  "files": [
+    "./dev/app.component.ts",
+    "./dev/boot.ts",
+    "./dev/child.component.ts",
+    "./dev/contacts/contact-list.component.ts",
+    "./dev/contacts/contact.component.ts",
+    "./dev/contacts/contact.service.ts",
+    "./dev/contacts/contact.ts",
+    "./dev/contacts/mock-contact.ts",
+    "./dev/contacts/new-contact-formbuilder.component.ts",
+    "./dev/contacts/new-contact.component.ts",
+    "./dev/dependency/component1.component.ts",
+    "./dev/dependency/component2.component.ts",
+    "./dev/dependency/data.service.ts",
+    "./dev/dependency/dependency.component.ts",
+    "./dev/http-test.component.ts",
+    "./dev/http-test.service.ts",
+    "./dev/jquery/jquery-app.comopent.ts",
+    "./dev/jquery/jquery.component.ts",
+    "./dev/parent-child.component.ts",
+    "./dev/pipes.component.ts"
+  ]
 }
