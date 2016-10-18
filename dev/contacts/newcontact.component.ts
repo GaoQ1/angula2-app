@@ -8,7 +8,7 @@ import {Contact} from './contact';
   template: `
     <div>
       <label for="name">Name:</label>
-      <input type="text" id="name" #name/>
+      <input type="text" id="name" #name value="name"/>
     </div>
     <div>
       <label for="age">Age:</label>
@@ -19,8 +19,10 @@ import {Contact} from './contact';
   providers: [ContactService]
 })
 
-export class NewContactComponent{
-  constructor(private _contactService: ContactService, private _router: Router){}
+export class NewContactComponent implements OnInit{
+  public name = '';
+
+  constructor(private _contactService: ContactService, private _router: Router, private _routeParams: RouteParams){}
 
   onConfirm(name,age){
     let contact: Contact = {
@@ -29,5 +31,9 @@ export class NewContactComponent{
     }
     this._contactService.insertContact(contact);
     this._router.navigate(['Contacts']);
+  }
+
+  ngOnInit():any{
+    this.name = this._routeParams.get('name');
   }
 }
