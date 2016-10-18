@@ -1,8 +1,7 @@
-import {Component} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
 import {ContactComponent} from './contact.component';
 import {ContactService} from './contact-service';
 import {Contact} from './contact';
-import {OnInit} from 'angular2/core';
 
 @Component({
   selector: 'contact-list',
@@ -17,7 +16,12 @@ import {OnInit} from 'angular2/core';
   <contact [contact]="selectedContact"></contact>
   `,
   providers: [ContactService],
-  directives: [ContactComponent]
+  directives: [ContactComponent],
+  styles: [`
+    li{
+      list-style: none;
+    }
+    `]
 })
 
 export class ContactListComponent implements OnInit{

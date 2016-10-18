@@ -29,6 +29,7 @@
     "./dev/contacts/contact-service.ts",
     "./dev/contacts/contact.component.ts",
     "./dev/contacts/contact.ts",
-    "./dev/contacts/mock-contact.ts"
+    "./dev/contacts/mock-contact.ts",
+    "./dev/demo.ts"
   ]
 }
