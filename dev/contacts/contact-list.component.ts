@@ -13,20 +13,23 @@ import {Contact} from './contact';
       {{contact.name}} {{contact.age}}
     </li>
   </ul>
-  <contact [contact]="selectedContact"></contact>
+  <contact *ngIf="selectedContact !== null" [contact]="selectedContact"></contact>
   `,
   providers: [ContactService],
   directives: [ContactComponent],
   styles: [`
     li{
       list-style: none;
+      border-left: 1px solid #ccc;
+      padding-left: 10px;
+      margin-bottom: 4px;
     }
     `]
 })
 
 export class ContactListComponent implements OnInit{
   public contacts: Contact[];
-  public selectedContact = {};
+  public selectedContact = null;
 
   constructor(private _contactService: ContactService){}
 

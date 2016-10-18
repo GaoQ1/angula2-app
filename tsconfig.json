@@ -30,6 +30,6 @@
     "./dev/contacts/contact.component.ts",
     "./dev/contacts/contact.ts",
     "./dev/contacts/mock-contact.ts",
-    "./dev/demo.ts"
+    "./dev/contacts/newcontact.component.ts"
   ]
 }
