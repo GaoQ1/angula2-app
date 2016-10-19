@@ -30,7 +30,8 @@
     "./dev/contacts/contact.component.ts",
     "./dev/contacts/contact.ts",
     "./dev/contacts/mock-contact.ts",
-    "./dev/contacts/new-contact-formbuilder.component.ts",
-    "./dev/contacts/newcontact.component1.ts"
+    "./dev/contacts/newcontact.component.ts",
+    "./dev/contacts/newcontact.component1.ts",
+    "./dev/http-test.component.ts"
   ]
 }
