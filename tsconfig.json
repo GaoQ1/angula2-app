@@ -32,6 +32,7 @@
     "./dev/contacts/mock-contact.ts",
     "./dev/contacts/newcontact.component.ts",
     "./dev/contacts/newcontact.component1.ts",
-    "./dev/http-test.component.ts"
+    "./dev/http-test.component.ts",
+    "./dev/http-test.service.ts"
   ]
 }
