@@ -10,7 +10,12 @@ import {Contact} from './contact';
     <form [ngFormModel]="myForm" (ngSubmit)="onSubmit(myForm.value)">
       <div>
         <label for="name">Name:</label>
-        <input type="text" id="name" ngControl="name" [(ngFormControl)]="myForm.controls['name']" required/>
+        <input type="text" id="name"
+        ngControl="name"
+        [(ngFormControl)]="myForm.controls['name']"
+        #name="ngForm"
+        required/>
+        <span *ngIf="!name.valid">Not valid</span>
       </div>
       <div>
         <label for="age">Age:</label>
