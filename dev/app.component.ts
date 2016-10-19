@@ -22,8 +22,7 @@ import {NewContactComponent} from './contacts/newcontact.component';
 
 @RouteConfig([
   {path: '/contacts', name: 'Contacts', component: ContactListComponent, useAsDefault: true},
-  {path: '/newcontact/', name: 'NewContact', component: NewContactComponent},
-  {path: '/newcontact/:name', name: 'NewContactFromContact', component: NewContactComponent}
+  {path: '/newcontact', name: 'NewContact', component: NewContactComponent}
 ])
 
 export class AppComponent{

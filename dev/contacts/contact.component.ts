@@ -23,6 +23,6 @@ export class ContactComponent{
   }
 
   onCreateNew(){
-    this._router.navigate(['NewContactFromContact',{name: this.contact.name}]);
+    this._router.navigate(['NewContact',{name: this.contact.name}]);
   }
 }
